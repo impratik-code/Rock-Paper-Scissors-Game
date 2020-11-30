@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='static/js/script.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>   
+
+   
+    <div class='container-1'>
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class='flex-box-container-1'>
+            <div>
+                <button class='btn btn-primary' onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class='btn btn-danger' onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-containerr-1">
+            <div id="flexBoxResult"></div>
+        </div>
+    </div>   
+    <div class='container-2'>
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class='btn btn-success' onclick="generateCat()">Generate Cat</button>
+        <div class='flex-box-container-2' id='catArea'></div>
+
+    </div>
+    <div class='container-3' id='container-3'>
+        <h2>Challenge 3: Rock, Paper, Scissor</h2>
+        <div class='flex-box-container-3' id='cont'>
+
+          
+                <div class='box' id='rock' onclick="selectRock(event)"><img src='static/images/rock.png' height="200px" width="200px"></div>
+                <div class='box' id='paper' onclick="selectRock(event)"><img src='static/images/paper.jpg'height="200px" width="200px"></div>
+                <div class='box' id='scissor' onclick="selectRock(event)"><img src='static/images/scissor.jpg' height="200px" width="200px"></div>
+
+        </div>
+    </div>
+    <div class='container-5' id='container-5'>  
+        <h2 id='change-my-color'>Challenge 4 : Change the color of all buttons</h2>
+        <div class='flex-box-pic-color'>
+
+            <form action="">
+                <select name='backdrop' id='background' onchange="buttonColorChange(this)">
+
+                    <option value='random'>Random</option>
+                    <option value='red'>Red</option>
+                    <option value='green'>Green</option>
+                    <option value='reset'>Reset</option>
+                  
+
+                </select>
+                <button class="btn btn-primary">Wee!</button>
+                <button class="btn btn-danger">Twitter!</button>
+                <button class="btn btn-warning">Google!</button>
+                <button class="btn btn-success">Facebook!</button> 
+            </form>
+
+        </div>
+    </div>
+  
+</body>
+</html>
